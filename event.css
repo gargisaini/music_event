@@ -1,0 +1,185 @@
+.header{
+  display: flex;
+  background-color: black;
+  flex-wrap: wrap;
+  top: 0px;
+  width: 100%;
+  left: 0px;
+}
+.header > div {
+  padding: 20px;
+  color: white;
+  font-family: monospace;
+  font-weight: lighter;
+
+}
+.main{
+  background-image: url(photo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  
+}
+#id1{
+  color: white;
+  font-weight: 600;
+  font-size: 90px;
+  font-family:Helvetica, sans-serif;
+}
+#id2{
+  color: white;
+  font-size: 25px;
+  padding: 0%;
+}
+#id3{
+  font-size: 25px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+
+.info{ grid-area: infos;}
+.pic{ grid-area: pics;}
+
+.maindiv{
+  display: grid;
+  grid-template-areas: 
+  'infos infos infos pics'
+  'infos infos infos pics'
+  'infos infos infos pics'
+  'infos infos infos pics';
+  background-color: #ffffff;
+  
+}
+.maindiv > div{
+  background-color: #ffffff;
+  color: gray;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  padding: 30px;
+  
+
+}
+.ticket{
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  border-color:darkred;
+  background-color:darkred;
+  color: white;
+  border-width: 20px;
+  border-radius: 2px;
+  border-width: 2px;
+  font-size: 30px;
+  font-family: monospace;
+  background-image: linear-gradient(150deg,#a20e22,#b43e4e,darkred);
+
+}
+
+.maindiv1{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+
+}
+.maindiv1 > div{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  
+
+}
+.container1{
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  padding: 10px 20px;
+
+}
+
+.maindiv2{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: darkred;
+}
+.maindiv2 > div{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5px;
+  margin: 20px;
+}
+.id4{grid-area: ani;}
+.id5{grid-area: forms;}
+
+.maindiv4{
+  display: grid;
+  grid-template-areas: 
+  'ani forms forms forms'
+  'ani forms forms forms'
+  'ani forms forms forms'
+  'ani forms forms forms';
+  background-color: #ffffff;
+}
+
+.maindiv4 > div{
+  padding: 20px;
+}
+
+.id4{
+  text-align: center;
+  background-color:#ffffff;
+  color: silver;
+  width:min-content;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  animation-name: heading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heading{
+  from{background-color: #ffffff;}
+  to{background-color:darkred;}
+}
+
+.id5{
+  margin-top: 50px;
+}
+
+.icon{ grid-area: icons;}
+.add{ grid-area: adds;}
+.update{ grid-area: updates;}
+
+.maindiv3{
+  display: grid;
+  grid-template-areas: 
+  'icons adds updates'
+  'icons adds updates'
+  'icons adds updates'
+  'icons adds updates';
+  background-color: darkred;
+}
+.maindiv3 > div{
+  color: silver;
+  margin-bottom: 25px;
+  padding: 30px;
+
+}
+
+.footer{
+  background-color: darkred;
+  color: silver;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+  padding: 20px;
+  border-color: #ffffff;
+  border-top-width: 10px;
+  text-align: center;
+
+}
